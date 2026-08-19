@@ -956,23 +956,32 @@ body.jotform-open #formFrame {
     // =========================================
 
  const CONFIG = {
- EVENT_TITLE: "",
-  SETTINGS_ENDPOINT: "https://script.google.com/macros/s/AKfycbzjSJuN1YtHMyZkuV3XKeLJxT4ufe0xBhdVbjehFj9v_tzONu7eRAr3WEqBdLa3H0YJ/exec?action=settings&settings=1WNfPoNfxjvfZCwnKOpOJYUH_G_2xa06E9U3zG4BJhWw",
-BOAT_LOOKUP_URL: "https://script.google.com/macros/s/AKfycbyeCL-cNAw0pEqdYC_Xuu2xq7qDKVuOsaoSpavonBtBurxw0cvDeDW0kJ09fIbDf3Vo/exec",
-  PERSON_LOOKUP_URL: "https://script.google.com/macros/s/AKfycbw-zgZZeHRC6S5_f1xGkTwx-wXcFNq9z2O4cfhzAHSULQNDrwCp88vcvgU-617pgcg1/exec",
+  EVENT_TITLE: "ΑΓΚΙΣΤΡΙ 2026",
 
-  // ΠΡΟΣΟΧΗ:
-  // Κρατάμε εδώ τη φόρμα που έχει τα πεδία κυβερνήτη/πληρώματος.
-  // Αν φτιάξεις αντίγραφο Jotform για ΕΠΙΔΑΥΡΟΣ, βάλε εδώ το νέο URL.
-JOTFORM_BASE_URL: "https://form.jotform.com/262128273107351",
-   CREW_CHANGE_FORM_URL: "https://form.jotform.com/261776318640361",
+  SETTINGS_ENDPOINT:
+    "https://script.google.com/macros/s/AKfycbwZHkHtIf_wc9cMTh51gOUidUjBQ1b2-1JjmlZbUPzlfO1GnYpJ76lRIP0x2Gak_G52/exec?action=settings&settings=1n82B0U9POzHzGARw6ZCOwxoOidTHW9xtkyKXiQEk8u0",
 
-  EVENT_LOGO: "https://github.com/jsamartzis-png/logos/blob/main/logo_EntryFlow_removebg-preview.png?raw=true",
+  BOAT_LOOKUP_URL:
+    "https://script.google.com/macros/s/AKfycbweSV0ADfQEtl26B_lcxGjWHHgx0G8d5oYiZoK-ZvxQC4l2JPaIx9vEiWKmyDIXjvpkGQ/exec",
+
+  PERSON_LOOKUP_URL:
+    "https://script.google.com/macros/s/AKfycbw-zgZZeHRC6S5_f1xGkTwx-wXcFNq9z2O4cfhzAHSULQNDrwCp88vcvgU-617pgcg1/exec",
+
+  JOTFORM_BASE_URL:
+    "https://form.jotform.com/262291236204349",
+
+  CREW_CHANGE_FORM_URL:
+    "https://form.jotform.com/262291236204349",
+
+  EVENT_LOGO:
+    "https://github.com/jsamartzis-png/logos/blob/main/logo_EntryFlow_removebg-preview.png?raw=true",
+
   EVENT_BACKGROUND: "background.jpg",
- YEAR: "",
-  INFO_PHONE: "210 4101 113"
-};
 
+  YEAR: "2026",
+
+  INFO_PHONE: "210 4101113"
+};
 const BOAT_LOOKUP_URL = CONFIG.BOAT_LOOKUP_URL;
 const PERSON_LOOKUP_URL = CONFIG.PERSON_LOOKUP_URL;
 const JOTFORM_BASE_URL = CONFIG.JOTFORM_BASE_URL;
@@ -1125,10 +1134,10 @@ wosr_member_2: "wosr_member_2"
 function loadRaceSettingsFromSheet() {
     // Άμεση αρχική εμφάνιση μέχρι να φορτωθούν οι ΡΥΘΜΙΣΕΙΣ
 const fallbackRaceTitle =
-  "9ο Κύπελλο Καλλιθέας 2026";
+  "ΑΓΚΙΣΤΡΙ 2026";
 
 const fallbackRaceDate =
-  "12 & 13 Σεπτεμβρίου 2026";
+  "19 & 20 Σεπτεμβρίου 2026";
 
 const fallbackRaceYear =
   "2026";
