@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>RegattaFlow - 9ο Κύπελλο Καλλιθέας 2026</title>
+<title>RegattaFlow - ΑΓΚΙΣΤΡΙ 2026</title>
 <!-- Corrected to KORFOS settings architecture: 2026-08-11 -->
 <!-- FINAL PUBLIC SETTINGS ENDPOINT V4: 2026-08-11 -->
 
@@ -973,12 +973,11 @@ height: 100dvh !important;
     // =========================================
 
 const SETTINGS_WEB_APP_URL =
-  "https://script.google.com/macros/s/AKfycbw9kd0R_FliGWC1akVUAST3tCXbHY6ooKF4NJ9kMfcx6ib8SXTliRB7JdMd0_YzPVXe1w/exec";
+  "https://script.google.com/macros/s/AKfycbwZHkHtIf_wc9cMTh51gOUidUjBQ1b2-1JjmlZbUPzlfO1GnYpJ76lRIP0x2Gak_G52/exec";
 
-// Το μοναδικό αναγνωριστικό του αρχείου ΣΥΜΜΕΤΟΧΕΣ/ΡΥΘΜΙΣΕΙΣ για το Κύπελλο Καλλιθέας.
-// Μπορεί να αντικατασταθεί και από URL: ?settings=SPREADSHEET_ID
+// Το αρχείο ΣΥΜΜΕΤΟΧΕΣ / ΡΥΘΜΙΣΕΙΣ του ΑΓΚΙΣΤΡΙ 2026.
 const DEFAULT_SETTINGS_SPREADSHEET_ID =
-  "1WNfPoNfxjvfZCwnKOpOJYUH_G_2xa06E9U3zG4BJhWw";
+  "1n82B0U9POzHzGARw6ZCOwxoOidTHW9xtkyKXiQEk8u0";
 
 const PAGE_PARAMS = new URLSearchParams(window.location.search);
 const SETTINGS_SPREADSHEET_ID = String(
@@ -995,37 +994,39 @@ function makeSettingsEndpoint() {
 }
 
 const CONFIG = {
-  RACE_PREFIX: "KALLITHEA_CUP_2026",
-  EVENT_TITLE: "9ο Κύπελλο Καλλιθέας 2026",
-  RACE_DATE: "12 & 13 Σεπτεμβρίου 2026",
-  SUBMIT_EXPIRATION: "10 ΣΕΠΤΕΜΒΡΙΟΥ ώρα 20:00",
+  RACE_PREFIX: "AGKISTRI_2026",
+  EVENT_TITLE: "ΑΓΚΙΣΤΡΙ 2026",
+  RACE_DATE: "19 & 20 Σεπτεμβρίου 2026",
+  SUBMIT_EXPIRATION: "17 ΣΕΠΤΕΜΒΡΙΟΥ ώρα: 21:00",
+
   SETTINGS_SPREADSHEET_ID: SETTINGS_SPREADSHEET_ID,
   SETTINGS_ENDPOINT: makeSettingsEndpoint(),
 
-  // Ασφαλές fallback: το Κύπελλο απαιτεί επιλογή δύο εξοικειωμένων μελών.
-  // Αν υπάρχει τιμή OSR_RULE στο φύλλο ΡΥΘΜΙΣΕΙΣ, αυτή υπερισχύει.
   OSR_RULE: "YES",
 
-ORGANIZER_BANNER: "https://drive.google.com/thumbnail?id=1QpcKq4kdgPnM1tvSsutUk2tCObo4jPnI&sz=w2000",
-ORGANIZER_NAME: "",
-ORGANIZER_SHORT_NAME: "",
-ORGANIZER_EMAIL: "",
-ORGANIZER_TEL: "",
+  ORGANIZER_BANNER: "",
+  ORGANIZER_NAME: "",
+  ORGANIZER_SHORT_NAME: "",
+  ORGANIZER_EMAIL: "",
+  ORGANIZER_TEL: "",
+
   SHOW_RACE_TITLE: "YES",
 
-  JOTFORM_FORM_ID: "262128273107351",
-  JOTFORM_BASE_URL: "https://form.jotform.com/262128273107351",
+  JOTFORM_FORM_ID: "262291236204349",
+  JOTFORM_BASE_URL: "https://form.jotform.com/262291236204349",
 
   BOAT_LOOKUP_URL:
-    "https://script.google.com/macros/s/AKfycbzOp-9gQ9xMZtb7GxrLcWW_Nc5yrBu7KbmqDVYlI3s1GQ3wJhmOCfKyaoKgvTfttI2v/exec",
+    "https://script.google.com/macros/s/AKfycbweSV0ADfQEtl26B_lcxGjWHHgx0G8d5oYiZoK-ZvxQC4l2JPaIx9vEiWKmyDIXjvpkGQ/exec",
+
   PERSON_LOOKUP_URL:
     "https://script.google.com/macros/s/AKfycbw-zgZZeHRC6S5_f1xGkTwx-wXcFNq9z2O4cfhzAHSULQNDrwCp88vcvgU-617pgcg1/exec",
 
   EVENT_LOGO:
     "https://github.com/jsamartzis-png/logos/blob/main/logo_EntryFlow_removebg-preview.png?raw=true",
+
   EVENT_BACKGROUND: "background.jpg",
   YEAR: "2026",
-INFO_PHONE: "210 481-0390 / 0391"
+  INFO_PHONE: "210 4101113"
 };
 
 const SETTINGS_CACHE_KEY =
