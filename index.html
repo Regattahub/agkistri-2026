@@ -1877,7 +1877,11 @@ if (acceptTerms && !acceptTerms.checked) {
 
       try {
       await boatLookupWarmup;
-        const response = await fetch(BOAT_LOOKUP_URL + "?id=" + encodeURIComponent(sailNumber));
+        const response = await fetch(
+  BOAT_LOOKUP_URL +
+  "?action=entryLookup&id=" +
+  encodeURIComponent(sailNumber)
+);
         const json = await response.json();
 
         if (!json.ok) {
