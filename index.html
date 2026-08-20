@@ -1883,8 +1883,6 @@ if (acceptTerms && !acceptTerms.checked) {
   encodeURIComponent(sailNumber),
   10000
 );
-        const json = await response.json();
-
         if (!json.ok) {
           setStatus("Σφάλμα στο σύστημα αναζήτησης.", true, false, true);
           return;
