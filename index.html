@@ -2048,7 +2048,10 @@ if (osrRequired) {
 
 window.location.assign(formUrl);
 return;
-      function resetSearch() {
+    }
+
+    function resetSearch() {
+      localStorage.removeItem(getStorageKey());
       sailInput.value = "";
       setStatus("");
       hideResult();
